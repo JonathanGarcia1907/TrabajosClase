@@ -1,0 +1,55 @@
+/************************************************/
+/*        hoja de estilo de tortilla.html       */
+/*        autor: Jonathan García Conesa         */
+/*        version: 1.0                          */
+/*        fecha: octubre de 2023                */
+/*        comentario: trabajo de lenguaje de m  */
+/************************************************/
+
+@font-face{ src:url();
+            font-family: texto;
+        }
+
+
+/* poner SIEMPRE que utilicemos un layout complejo */
+/* las medidas de ancho y alto se deben calcular del borde hacia adentro */
+*{box-sizing:border-box}
+
+body {background-image:url(../img/mantel.jpg);
+        background-size: 50%;
+        margin: 0;padding: 0;    /*para que el wrapper se pegue a body  */
+        font-size: 1.2em;        /*em y rem son medidas exclusivas para el texto  */
+    } 
+#wrapper {width: 80%;   /*para width la medida suele ser el porcentaje */
+            margin: auto;
+            padding:5%;
+            background-color: white;}
+
+blockquote {font-style: italic;
+            border-left:4px solid purple;
+            background-color: rgb(221, 196, 244);
+            padding:20px;}
+img{float: right;  /*****forma  la imagen hacia la derecha***/
+    margin: auto;  /****solo funciona  ****/
+    display: block;
+    width: 50%;}   /****ocupa la mitad del espacio que hay en su bloque contenedor****/
+                    /******poner SIEMPRE UN PORCENTAJE DEL ANCHO DEL BLOQUE CONTENEDOR***/
+ul {list-style-image: url(../img/bullet_ball_yellow.png);}
+
+dt {font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: underline overline;
+    color:crimson}
+
+
+
+    /****************************    RESPONSIVIDAD: TOMAMOS CONTROL ******************************/
+    /**************************** VAMOS A HACER QUE EL WRAPPER PASE AL 100% EN MÓVILES  **********/
+    /**************************** ATENCIÓN: MEDIA QUERY ******************************************/
+
+    @media only screen and (width<700px) {
+        #wrapper {width:95%;}     /**** redefino el ancho de wrapper para moviles ******/
+        img {width:100%;}
+
+
+    }

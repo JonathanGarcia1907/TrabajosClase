@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween</title>
+    <link rel="stylesheet" href="./css/halloween.css">
+    <link rel="shortcut icon" href="./img/pumpkin.png" type="image/x-icon">
+    <!-- aqui enlazamos el archivo externo con las funciones de js -->
+    <script src="./js/halloween.js"></script>
+</head>
+<body>
+    <!-- this exercise is made just for fun-->
+    <!-- WARNING: it`s not RESPONIVE, only for computers & laptops-->
+    <!-- I have to search for an image, a wallpaper image-->
+    <div id="scenario">
+        <!-- we´r going to fix an specific area for an event, for example the moon-->
+        <div id="moon" onmouseover="show('witch')" onmouseout="hide('witch')">
+            <!-- nothing inside -->
+        </div>
+        <div id="pumpkin">
+            <!-- nothing inside -->
+        </div>
+        <img id= "zombie"      src="./img/zombie.gif" alt="">
+        <div id="grave" onmouseover="show('zombie');sound('witchsound')"  onmouseout="hide('zombie');silence('witchsound')">
+            <!-- nothing inside -->
+        </div>
+        <div id="eyes">
+            <!-- nothing inside -->
+        </div>
+        <audio id="witchsound">
+            <source src="./sound/witch-103635.mp3" type="audio/mp3">
+        </audio>
+        
+    </div>
+
+</body>
+
+</html>
