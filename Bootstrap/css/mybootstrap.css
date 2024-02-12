@@ -1,0 +1,29 @@
+/********************************************************/
+/* my own style for my bootstrap webpage                */
+
+
+/* addding a new color */
+.bg-purple {background-color: purple;}
+.text-purple {color: purple;}
+.border-purple {border-color: purple;}
+
+/* adding a new padding */
+
+.p-6 {padding: 6em;}
+.pt-6 {padding-top: 6em;}
+
+/* adding a new height */
+
+.h-85 { height: 85vh;}
+
+
+
+/***************************************************/
+
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+body {background-image: url(../img/mantel.jpg);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}

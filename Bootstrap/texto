@@ -1,0 +1,14 @@
+framework: coleccion de herramientas, que incluye 
+            librerias, code snippets, convenciones,...
+
+bootstraps es un framework para creacion de web pagwes e interfaces de aplicaciones 
+
+mejora la productividad 
+se utiliza para prototipar 
+es full responsive 
+trae librerias de js 
+trae un estilo basado en calses 
+es compatible con todos los navegadores
+es propiedad de Twitter
+es de codigo abierto
+la web de referencia es getbootstrap.com
